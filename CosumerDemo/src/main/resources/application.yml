@@ -1,0 +1,22 @@
+server:
+  port: 9988
+  servlet:
+    context-path: /eric
+spring:
+  application:
+    name: rabbit-consumer
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: eric
+    password: eric
+    virtual-host: /eric
+    listener:
+      direct:
+        acknowledge-mode: manual
+        prefetch: 1
+      simple:
+        acknowledge-mode: auto
+
+
+

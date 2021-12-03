@@ -1,0 +1,15 @@
+server:
+  port: 9989
+  servlet:
+    context-path: /eric
+spring:
+  application:
+    name: rabbit-producer
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: eric
+    password: eric
+    virtual-host: /eric
+    publisher-returns: true
+    publisher-confirm-type: simple
